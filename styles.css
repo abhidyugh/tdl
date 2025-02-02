@@ -1,25 +1,30 @@
-body{
-    background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
 }
-.abcd
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family:cursive;
-}
-#task_input
-{
-    margin-bottom: 1rem;
-}
-#Heading
-{
-    color: rgb(240, 244, 243);
-}
-.button-64 {
+
+.abcd {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  font-family: cursive;
+}
+.delete-btn
+{
+  width: 2vw;
+}
+#task_input {
+  margin-bottom: 1rem;
+}
+
+#Heading {
+  color: rgb(240, 244, 243);
+  text-align: center;
+}
+
+#button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
   border: 0;
   border-radius: 8px;
   box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
@@ -32,6 +37,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
   line-height: 1em;
   max-width: 100%;
   min-width: 140px;
+  margin-left: 32vw;
   padding: 3px;
   text-decoration: none;
   user-select: none;
@@ -41,12 +47,12 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
   cursor: pointer;
 }
 
-.button-64:active,
-.button-64:hover {
+#button-64:active,
+#button-64:hover {
   outline: 0;
 }
 
-.button-64 span {
+#button-64 span {
   background-color: rgb(5, 6, 45);
   padding: 16px 24px;
   border-radius: 6px;
@@ -55,13 +61,41 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
   transition: 300ms;
 }
 
-.button-64:hover span {
+#button-64:hover span {
   background: none;
 }
 
 @media (min-width: 768px) {
-  .button-64 {
+  #button-64 {
     font-size: 24px;
     min-width: 196px;
   }
+}
+
+#task_text {
+  width: 80vw;
+  min-height: 40px;
+  resize: none;
+  overflow: hidden;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: darkslateblue;
+}
+
+.task_show {
+  font-size: 26px;
+  text-align: left;
+  width: 100%;
+  color: aliceblue;
+}
+
+.task_item {
+  border-style:ridge;
+  border-radius: 12px;
+  border-color: rgb(255, 255, 255);
+  background-color:darkslateblue;
+  color: rgb(249, 246, 246);
+  padding: 10px;
+  margin: 10px;
 }
